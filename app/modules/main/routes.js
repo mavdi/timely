@@ -1,8 +1,6 @@
-"use strict";
-
 angular.module('app.routes', ['ui.router'])
 .config(function ($stateProvider, $urlRouterProvider) {
-  console.log('hola');
+  
   $urlRouterProvider.otherwise('/');
 
   $stateProvider
