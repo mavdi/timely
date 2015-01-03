@@ -21,7 +21,7 @@ exports.config = {
   //cucumber options
   cucumberOpts: {
     //find the step definitions here
-    require: 'features/step_definitions/**/*.js',
+    require: '**/*.js',
     //this outputs better information
     format: 'pretty',
     //ask tests to wait 20 seconds before they timeout
