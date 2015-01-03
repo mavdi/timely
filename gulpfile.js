@@ -8,7 +8,7 @@ var protractor = require('gulp-protractor');
 var exec = require('child_process').exec;
 var runSequence = require('run-sequence');
 
-gulp.task('test', ['seed'], function(callback) {
+gulp.task('test', function(callback) {
   runSequence('server:start', 'protractor', 'server:stop', callback);
 });
 
