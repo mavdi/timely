@@ -1,7 +1,10 @@
+var assert = require('assert');
+
 var steps = function() {
   this.Given(/^that I am an unauthenticated user$/, function (callback) {
     // express the regexp above with the code you wish you had
-    callback.pending();
+    assert.equal('tomato', 'potato');
+    callback();
   });
 
   this.When(/^I open the timely app$/, function (callback) {
